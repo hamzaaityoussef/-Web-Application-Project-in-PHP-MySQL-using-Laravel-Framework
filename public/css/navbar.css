@@ -1,0 +1,131 @@
+/* file seulement pour style de navbar et footer  */
+
+nav {
+    position: relative;
+    width: 90%;
+    margin: 0 auto; 
+    margin-bottom: 40px;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    border: 2px solid #EBECF1;
+    border-radius: 30px;
+    animation: slide-in 1s ease-out;
+  }
+  nav>ul>li:first-child{
+    margin-left: 30px;
+  }
+  nav>ul>li:last-child{
+    margin-right: 30px;
+  }
+  nav ul {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0 15px; /* Adjust the space between items */
+    list-style-type: none;
+    justify-content: space-between;
+   
+
+    li {
+        
+       
+      border: 2px solid transparent;
+      border-radius: 5px;
+      padding: 10px;
+      transition: background 0.2s;
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: color 0.2s;
+      }
+      ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        display: block;
+        margin: 12px -12px;
+        padding: 0;
+        background: #0a172b;
+        border: 2px solid #5b96df;
+        border-radius: 5px;
+        transition: opacity 0.2s, visibility 0.2s;
+        li {
+          a {
+            color: #2375D8;
+          }
+        }
+      }
+      &:hover {
+        background: #0a172b;
+        a {
+          color: #F9F8FD;
+        }
+        ul {
+          visibility: visible;
+          opacity: 1;
+          /* box-shadow: 0px 3px 5px 2px #EBECF1; */
+          li {
+            a {
+              color: #F9F8FD;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* style pour footer  */
+
+  footer {
+    
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(67, 80, 84);
+  }
+  
+  .contact-section,
+  .social-section,
+  .about-section {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .contact-section h2,
+  .social-section h2,
+  .about-section h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+  }
+
+  .social-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .social-section a,.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  

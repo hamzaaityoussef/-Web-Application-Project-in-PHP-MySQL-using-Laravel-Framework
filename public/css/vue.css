@@ -1,0 +1,238 @@
+
+@media (min-width: 768px){
+  .container{
+    width: 750px;
+  }
+}
+
+/* medium screens */
+@media (min-width: 992px){
+  .container{
+    width: 970px;
+  }
+}
+
+/* small screens */
+@media (min-width: 1200px){
+  .container{
+    width: 1170px;
+  }
+}
+
+.navbar{
+    height: 60px;
+    width: 98%;
+    background-color: rgba(0, 0, 0, 0.517);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    margin-top: 20px;
+    /* margin-left: 10px; */
+}
+.header{
+    display: flex;
+}
+/* .page{
+    position: absolute;
+} */
+
+nav>ul>li {
+    margin: 0px 25px 0px 25px;
+    list-style-type: none;
+    display: inline;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+.navbar>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.submenu {
+    list-style-type: none;
+    position: absolute;
+    top: 33%;
+    left: 13%;
+    width: 170px;
+    /* padding: 15px 0; */
+    background-color: hsl(229, 54%, 51%);
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.5);
+    z-index: 1;
+    transform-origin: top;
+    transform: scaleY(0);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s ease, transform 0.5s ease, visibility 1.5s;
+}
+
+.submenu>li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.submenu>li>a>span {
+    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 100%));
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.5s ease;
+}
+
+.navbar li:hover > .submenu,
+.submenu:hover {
+    opacity: 1;
+    transform: scaleY(1);
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+.submenu li:hover > a > span {
+    background-size: 100% 1px;
+}
+
+.page {
+    /* background-image: url("fst.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;  */
+    height: 1230px;
+    width: 100%;
+}
+
+.fsttimg{
+    margin-right: 770px;
+    margin-left: 80px;
+}
+
+.header img{
+    margin-top: 10px;
+}
+.presentation{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
+}
+.fst,.nbretudiant {
+    background-color: rgba(119, 146, 170, 0.522);
+    width: 45%;
+    height: 300px;
+    margin-bottom: 30px; 
+    border-radius: 10px;
+}
+.fst h1,.nbretudiant h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.fst p{
+    margin-top: 50px;
+}
+
+.tocenter {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    
+    
+}
+.tocenter p{
+    margin:40px 20px 0px 10px;
+}
+.formation , .formationcontinue{
+    width: 95%;
+    margin-left: 30px;
+    border-radius: 10px ;
+    height: 300px;
+    background-color:  rgba(119, 146, 170, 0.522);
+    
+}
+.niveau{
+    height: 200px;
+    width: 200px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px 0px;
+    
+    background-size:cover;
+    background-repeat: no-repeat; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.formationdetail{
+    display: flex;
+    justify-content: space-evenly;
+}
+.formation h1, .formationcontinue h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.deust{
+    background-image: url("deust.jpg");
+}
+.LST{
+    background-image: url("LST.jpg");
+}
+.MST{
+    background-image: url("deust.jpg");
+}
+.INGENIEUR{
+    background-image: url("LST.jpg");
+}
+.formationcontinue{
+    margin-top: 30px;
+}
+
+
+footer {
+    
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(67, 80, 84);
+  }
+  
+  .contact-section,
+  .social-section,
+  .about-section {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .contact-section h2,
+  .social-section h2,
+  .about-section h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+  }
+
+  .social-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .social-section a,.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  

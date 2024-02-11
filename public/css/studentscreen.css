@@ -1,0 +1,209 @@
+html, body {
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    color: #272829;
+    margin: 0;
+    background:#f5f8fd;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/fst.jpeg') ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+}
+strong{
+    font-size: 18px;
+
+}
+#header {
+    float: left;
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #02387e;
+}
+#dash,#annan, #cal{
+font-size: 23px;
+margin-right: 8px;
+}
+#header img {
+    margin: 30px auto 0;
+    display: block;
+    width: 120px;
+    border: 7px solid #b9dd05;
+    height: 90px;
+    border-radius: 50%;
+}
+#navbar {
+    padding-top: 20px;
+}
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+#navbar a {
+    display: flex;
+    color: #868e96;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-decoration: none;
+}
+#navbar a:hover {
+    color: #fff;
+}
+#main {
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+#home{
+    height: 25%;
+    padding-top: 54px;
+    backdrop-filter: blur(15px);
+    background-color: #393b2f;
+}
+#home .heading {
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #040b14;
+    margin-top: 0;
+    margin-bottom: 6px;
+    margin-left: 10px;
+}
+h1{
+    border-bottom: 3px black solid;
+}
+#home .subheading {
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#home .subheading a {
+    color: #173b6c;
+    text-decoration: none;
+}
+#home .subheading a:hover {
+    color: #149ddd;
+}
+#home p {
+    font-size: 18px;
+    padding-top: 40px;
+    color: #868e96;
+}
+#home .contact-icons {
+    display: flex;
+    margin-top: 48px;
+}
+#home .contact-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f8fd;
+    background-color: #495057;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+#home .contact-icons a:hover {
+    background-color: #149ddd;
+}
+#home .contact-icons a i {
+    font-size: 1.6rem;
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-title {
+    padding-bottom: 20px;
+}
+
+.section-title h2 {
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+.infos{
+
+     display: flex;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+@media(max-width: 768px){
+    #main {
+      width: 100%;
+      overflow: unset;
+    }
+    #header {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #header img {
+      margin: auto;
+    }
+    #navbar {
+      padding: 0px;
+    }
+    #navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    #navbar a{
+      margin: 0px;
+      padding: 10px;
+    }
+    #home .heading {
+      font-size: 40px;
+    }
+    #home .subheading {
+      font-size: 18px;
+    }
+    #home p {
+      font-size: 14px;
+    }
+    section{
+      max-width: 400px;
+      width: 100%;
+    }
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

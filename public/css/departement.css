@@ -1,0 +1,76 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+/* large screens */
+@media (min-width: 768px){
+  .container{
+    width: 750px;
+  }
+}
+
+/* medium screens */
+@media (min-width: 992px){
+  .container{
+    width: 970px;
+  }
+}
+
+/* small screens */
+@media (min-width: 1200px){
+  .container{
+    width: 1170px;
+  }
+}
+
+.container{
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .génie-info, 
+.container .génie-chimique,
+.container .génie-mécanique,
+.container .génie-électrique,
+.container .math,
+.container .physique{  
+  width: -moz-fit-content;       
+  width: fit-content;  
+
+  height: fit-content;
+  background-color: #EEE;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.container .génie-info p,
+.container .génie-chimique p,
+.container .génie-mécanique p,
+.container .génie-électrique p,
+.container .math p,
+.container .physique p{
+  margin: 15px 0 15px;
+}
+
+.container .génie-info img,
+.container .génie-chimique img,
+.container .génie-mécanique img,
+.container .génie-électrique img,
+.container .math img,
+.container .physique img{
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+img{
+  width: 240;
+  height: 160;
+}
